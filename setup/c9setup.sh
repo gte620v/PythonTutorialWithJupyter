@@ -7,4 +7,4 @@ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O Mi
 bash Miniconda3-latest-Linux-x86_64.sh -b
 export PATH="$HOME/miniconda3/bin:$PATH"
 echo 'export PATH=$HOME/miniconda3/bin:$PATH' >> ~/.bashrc
-conda install jupyter notebook -y
+conda install jupyter notebook --yes
