@@ -1,9 +1,9 @@
 #!/bin/bash
-if [ -d $HOME/anaconda2 ]
+if [ -d $HOME/miniconda3 ]
 then
-    rm -rf $HOME/anaconda2
+    rm -rf $HOME/miniconda3
 fi
-wget http://repo.continuum.io/archive/Anaconda2-4.0.0-Linux-x86_64.sh -O Anaconda2-4.0.0-Linux-x86_64.sh
-bash Anaconda2-4.0.0-Linux-x86_64.sh -b
-export PATH="$HOME/anaconda2/bin:$PATH"
-echo 'export PATH=$HOME/anaconda2/bin:$PATH' >> ~/.bashrc
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh -b
+export PATH="$HOME/miniconda3/bin:$PATH"
+echo 'export PATH=$HOME/miniconda3/bin:$PATH' >> ~/.bashrc && source ~/.bashrc
